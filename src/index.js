@@ -17,6 +17,9 @@ const theme = extendTheme({
     },
     window: {
       100: "#FFFFFF"
+    },
+    tint: {
+      100: "rgba(0,0,0, .3)",
     }
   }
 })
