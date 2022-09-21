@@ -1,11 +1,21 @@
-import { Button } from '@chakra-ui/react';
+import { Button, Text, Box, Square } from '@chakra-ui/react';
 
 function DropDownButton() {
     return (
-    <Button backgroundColor='tint.100'
-    width='100%' borderRadius='20px'>
-      Select your state: v {/*Need to find a way for the overlay to not affect text*/}
-    </Button>
+    <Box width='100%' display='flex' alignItems='center' 
+    justifyContent='center'>
+      <Button background='none'
+      width='100%' borderRadius='20px'>
+        <Text color='green' position='absolute' zIndex='1' color='white'
+        >
+          Select your state:
+        </Text>
+        <Square backgroundColor='white' mixBlendMode='overlay'
+        position='absolute' height='100%'
+        width='100%' borderRadius='20px' color='none'>
+        </Square>
+      </Button>
+    </Box>
     )
 }
 
