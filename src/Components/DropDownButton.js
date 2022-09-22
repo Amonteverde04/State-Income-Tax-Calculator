@@ -5,8 +5,9 @@ function DropDownButton() {
     <Box width='100%' display='flex' alignItems='center' 
     justifyContent='center'>
       <Button background='none'
-      width='100%' borderRadius='20px'>
-        <Text color='green' position='absolute' zIndex='1' color='white'
+      width='100%' borderRadius='20px' 
+      _hover={{color: 'button.100', backgroundColor:'white'}}>
+        <Text position='absolute' zIndex='1'
         >
           Select your state:
         </Text>

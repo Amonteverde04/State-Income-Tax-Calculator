@@ -3,7 +3,7 @@ import SubmitButton from '../Components/SubmitButton';
 import SalaryInput from '../Components/SalaryInput';
 import DropDownButton from '../Components/DropDownButton';
 
-function MainForm() {
+function MainForm(props) {
     return(
         <Box width='80%' height='30%'
           marginLeft='auto' marginRight='auto' display='flex'
@@ -11,7 +11,7 @@ function MainForm() {
           >
             <DropDownButton/>
             <SalaryInput/>
-            <SubmitButton buttonColor='button.100'/>
+            <SubmitButton setPopUp={props.setPopUp} setPopUpType={props.setPopUpType} buttonColor='button.100'/>
         </Box>
     )
 }
